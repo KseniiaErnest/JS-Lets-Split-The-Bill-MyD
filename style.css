@@ -116,6 +116,7 @@ form {
   font-size: 1.4rem;
   border-radius: 11px;
   text-align: center;
+  width: 30%;
 }
 
 #billSplit p, #tipSplit p, #totalAmout p {
