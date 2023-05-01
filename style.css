@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  background-image: url('https://images.unsplash.com/photo-1505935428862-770b6f24f629?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1167&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+ 
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+#container {
+  background-color: rgb(242, 182, 160, 0.7);
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 10rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 2.8rem;
+  padding: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+
+.text {
+  font-size: 2rem;
+  margin-bottom: 0.7rem;
+}
+
+#bill, #people {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.2rem;
+  padding: 0.3rem;
+  margin-bottom: 1.4rem;
+  border-radius: 9px;
+  border: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#addTip {
+  background-color: #DEDEA7;
+  width: 70%;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  font-family: 'Josefin Sans', sans-serif;
+  border: none;
+  border-radius: 9px;
+  margin-bottom: 1rem;
+  box-shadow: 5px 5px 12px 7px rgb(65, 65, 49, 0.1) ;
+}
+
+#tip {
+  font-family: 'Josefin Sans', sans-serif;
+  width: 70%;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 0.3rem;
+  margin-bottom: 1rem;
+  display: none;
+}
+
+#btn {
+  background-color: #E06469 ;
+  width: 70%;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  font-family: 'Josefin Sans', sans-serif;
+  border: none;
+  border-radius: 9px;
+  margin-bottom: 1rem;
+  box-shadow: 5px 5px 12px 7px rgb(73, 32, 33, 0.1)  ;
+}
+
+#showTotalAmountToPay {
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#billSplit, #tipSplit, #totalAmout {
+  background-color: #DEDEA7;
+  padding: 1.2rem;
+  font-size: 1.4rem;
+  border-radius: 11px;
+  text-align: center;
+}
+
+#billSplit p, #tipSplit p, #totalAmout p {
+  margin-bottom: 0.5rem;
+}
+
+
+@media all and (max-width: 80em) {
+  #container {
+    width:65%;
+  }
+
+  #showTotalAmountToPay {
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+
+
+
+@media all and (max-width: 57em) {
+  #container {
+    width: 80%;
+  }
+}
+
+@media all and (max-width: 35em) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .text {
+    font-size: 1.4rem;
+  }
+  
+  #bill, #people {
+    font-size: 1rem;
+    padding: 0.2rem;
+  }
+
+  #showTotalAmountToPay {
+    width: 80%;
+  }
+
+  #billSplit, #tipSplit, #totalAmout {
+  font-size: 1rem;
+  }
+  
+}
+
+@media all and (max-width: 28em) {
+  #container {
+    margin-top: 3rem;
+  }
+
+  #showTotalAmountToPay {
+    margin-top: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #billSplit, #tipSplit, #totalAmout {
+    padding: 1rem 0 1rem 0;
+    font-size: 1rem;
+    width: 70%;
+  
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+}
